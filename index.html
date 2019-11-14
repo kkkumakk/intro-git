@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>- portfolio -</title>
+  <link href="https://fonts.googleapis.com/css?family=Paytone+One|Poiret+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <div class="go-top">
+    <a href="#">
+      <img src="img/go-top.png" alt="">
+    </a>
+  </div>
+
+  <header class="sec-header" id="header">
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#intro">INTRO</a></li>
+        <li><a href="#skill">SKILL</a></li>
+        <li><a href="#work">WORK</a></li>
+        <li><a href="#history">HISTORY</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="sec-top">
+    <div class="bg-main-fixed"></div>
+    <p class="top-title">Hello</p>
+    <a class="btn-start flash" href="#intro">↓</a>
+  </div>
+
+  <div class="sec-intro fadein" id="intro">
+    <div class="sec-container">
+      <h2 class="sec-title">INTRO</h2>
+      <p class="sec-intro-comment-1">「 何かスキルを身につけたい 」</p>
+      <p class="sec-intro-comment-2">そう思った時に始めたのが、プログラミング・web制作という分野でした。progateや書籍、udemyなどを中心に全て独学で学び、このサイトやWORKに掲載しているアプリケーションを作成しました。スクールには通わなかったため、一つの躓きに対して多くの時間を費やしてしまい、決して効率の良い学習ではなかったかもしれません。しかし、全て自己解決してきたことにより、検索力、自己解決力は少なからず身についたのではないかと思っております。フロントエンドエンジニアになることを、当面の目標にしております。</p>
+    </div>
+  </div>
+
+  <div class="sec-skill fadein" id="skill">
+    <div class="sec-container">
+      <h2 class="sec-title">SKILL</h2>
+      <ul>
+        <li class="skill-card">
+          <h3 class="skill-title">HTML & CSS</h3>
+          <div class="skill-description">
+            <p>FlexBoxやメディアクエリでのレスポンシブ対応はもちろん、いくつかのサイトを模写することで、このポートフォリオ程度は作れるようになりました。</p>
+          </div>
+        </li>
+        <li class="skill-card">
+          <h3 class="skill-title">SASS</h3>
+          <div class="skill-description">
+            <p>このサイトのような小規模なものでは実感することはできませんが、管理・修正面の利便性や、コードの見通しの良さはもちろん、実務でも必要になると思い学習しました。</p>
+          </div>
+        </li>
+        <li class="skill-card">
+          <h3 class="skill-title">JavaScript ( Vue )</h3>
+          <div class="skill-description">
+            <p>ProgateでJavaScriptの基礎を学んでから書籍に移行し、初めてのフレームワークとしてVueを選択しました。WORKにVueを用いて、GoogleNEWSのAPIを利用し作成した記事検索アプリを掲載しております。</p>
+          </div>
+        </li>
+        <li class="skill-card">
+          <h3 class="skill-title">GitHub</h3>
+          <div class="skill-description">
+            <p>ポートフォリオを掲載するという目的もありますが、業務でも必須となると思い、Udemyの講座にて一連の作業の流れ、エラーが起きた際の対処方法を学びました。</p>
+          </div>
+        </li>
+        <li class="skill-card">
+          <h3 class="skill-title">PhotoShop</h3>
+          <div class="skill-description">
+            <p>PhotoShopに関しては、扱えるというほどのレベルではありませんが、コーディングに必要な値の取得方法、画像の書き出しについては理解しています。実際のデザインカンプを用いて学びました。</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sec-work fadein" id="work">
+    <div class="sec-container">
+      <h2 class="sec-title">WORK</h2>
+      <div class="work-items">
+        <div class="work-item">
+          <a href="https://kkkumakk.github.io/portfolio/">
+            <h3 class="work-item-title">記事検索アプリケーション</h3>
+          </a>
+        </div>
+        <div class="work-item-description">
+          <p class="work-item-description-title"><span>タイトル</span> : 記事検索アプリ</p>
+          <p class="work-item-description-title"><span>コード</span> : <a class="work-item-url" href="https://github.com/kkkumakk/portfolio">GitHub</a></p>
+          <p class="work-item-description-title"><span>使用した技術・工夫した点</span> : </p>
+          <ul>
+            <li class="work-item-li">Vueを用いてGoogleNewsのAPIを利用した記事検索アプリ</li>
+            <li class="work-item-li">入力中、読み込み時、検索結果がない場合など状況に応じたメッセージの表示</li>
+            <li class="work-item-li">一度記事を表示した後にキーワードの再入力を行った場合、表示している記事を非表示にする</li>
+            <li class="work-item-li">input要素、selectBox要素がそれぞれ何を入力するところなのかが一目でわかるようにアイコンを設置</li>
+            <li class="work-item-li">一度に何件の記事を取得するか、人気順・新着順のソート機能。入力した内容をAPIのリクエストパラメータに反映させた。</li>
+            <li class="work-item-li">画像を取得する際にNull値で返されることがあるので、その場合は差し替えの画像を表示</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sec-history fadein" id="history">
+    <div class="sec-container">
+      <h2 class="sec-title">HISTORY</h2>
+    </div>
+  </div>
+
+  <footer>
+    <p>Copyright©️K.K All Rights Reserved.</p>
+  </footer>
+
+  <script src="smooth-scroll.polyfills.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="main.js">
+
+  </script>
+</body>
+</html>
