@@ -31,3 +31,14 @@ $('.go-top').click(function () {
   }, 1000);
   return false;
 });
+
+$(function(){
+	var loader = $('.loader-wrap');
+	$(window).on('load',function(){
+		loader.fadeOut();
+	});
+
+	// setTimeout(function(){
+	// 	loader.fadeOut();
+	// },3000);
+});
